@@ -24,7 +24,7 @@ $(".create-form").on("submit", function(event) {
       sleepy: $("[name=sleepy]:checked").val().trim()
     };
 
-    $.ajax("/api/cats", {
+    $.ajax("/", {
       type: "POST",
       data: newBurger
     }).then(
